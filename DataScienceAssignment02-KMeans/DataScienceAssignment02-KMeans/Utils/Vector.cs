@@ -8,7 +8,7 @@ namespace DataScienceAssignment02_KMeans.Utils
 {
     class Vector
     {
-        public List<int> points = new List<int>();
+        private List<int> points = new List<int>();
 
         public Vector()
         {
@@ -35,6 +35,11 @@ namespace DataScienceAssignment02_KMeans.Utils
         public int Size()
         {
             return points.Count();
+        }
+
+        public List<int> getPoints()
+        {
+            return points;
         }
 
     }
