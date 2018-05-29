@@ -14,7 +14,7 @@ namespace DataScienceAssignment02_KMeans.Utils
             List<Vector> vectors = new List<Vector>();
             var result = File.ReadAllLines(path).Select(
                     line => line.Split(delimiter)
-                            .Select(int.Parse).ToList())
+                            .Select(float.Parse).ToList())
                     .ToList();
 
             // Loop through all rows and columns

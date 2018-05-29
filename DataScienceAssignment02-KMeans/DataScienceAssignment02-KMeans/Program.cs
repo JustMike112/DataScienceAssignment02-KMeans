@@ -14,7 +14,11 @@ namespace DataScienceAssignment02_KMeans
         {
             // Winedata contains 32 rows and 100 columns
             List<Vector> vectors = Parser.Parse(',', "Winedata.csv");
-            
+
+            var KMeansAlgorithm = new KMeans(50, 4, vectors);
+            KMeansAlgorithm.MainLoop();
+            KMeansAlgorithm.PrintResults();
+
             Console.ReadLine();
 
         }

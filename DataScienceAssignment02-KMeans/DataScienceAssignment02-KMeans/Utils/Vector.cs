@@ -8,7 +8,8 @@ namespace DataScienceAssignment02_KMeans.Utils
 {
     class Vector
     {
-        private List<int> points = new List<int>();
+        public List<float> points = new List<float>();
+        public int centroid;
 
         public Vector()
         {
@@ -22,12 +23,12 @@ namespace DataScienceAssignment02_KMeans.Utils
             }
         }
 
-        public Vector(List<int> points)
+        public Vector(List<float> points)
         {
             this.points = points;
         }
 
-        public void AddPoint(int point)
+        public void AddPoint(float point)
         {
             points.Add(point);
         }
@@ -36,11 +37,5 @@ namespace DataScienceAssignment02_KMeans.Utils
         {
             return points.Count();
         }
-
-        public List<int> getPoints()
-        {
-            return points;
-        }
-
     }
 }

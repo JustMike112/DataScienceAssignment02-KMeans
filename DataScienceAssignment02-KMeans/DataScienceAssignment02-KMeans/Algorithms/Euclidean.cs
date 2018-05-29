@@ -17,7 +17,7 @@ namespace DataScienceAssignment02_KMeans.Algorithms
             var total = 0.0;
 
             for (var i = 0; i < length; i++)
-                total += Math.Pow(user1.getPoints()[i] - user2.getPoints()[i], 2);
+                total += Math.Pow(user1.points[i] - user2.points[i], 2);
 
             return Math.Sqrt(total);
         }
